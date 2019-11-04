@@ -24,7 +24,7 @@ public class BalanceController {
 	BalanceService balservice;
 	
 	@RequestMapping(value = "/plans", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public List<BalanceDetailsDTO> getallBalances()
+	public long getallBalances()
 	{
 		return balservice.getAllBalance();
 	}
